@@ -1,1 +1,1 @@
-# junior-admins-03
+# junior-admins-03.github.io
