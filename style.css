@@ -1,0 +1,80 @@
+/* Загальні стилі */
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #000;
+  color: #d0ffd0; /* Світло-зелений текст */
+}
+
+a {
+  color: #aaffaa;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: #00ff88;
+}
+
+header {
+  background-color: #111;
+  padding: 1em;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo img {
+  height: 50px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5em;
+  padding: 0;
+  margin: 0;
+}
+
+nav li {
+  display: inline;
+}
+
+main {
+  padding: 2em;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+h1, h2 {
+  color: #66ff99;
+  border-bottom: 2px solid #00ff88;
+  padding-bottom: 0.5em;
+}
+
+footer {
+  background-color: #111;
+  text-align: center;
+  padding: 1em;
+  font-size: 0.9em;
+  margin-top: 2em;
+}
+
+/* Адаптивність */
+@media (max-width: 768px) {
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  header {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .logo {
+    margin-bottom: 1em;
+  }
+}
