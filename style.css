@@ -1,80 +1,70 @@
-/* Загальні стилі */
-body {
+* {
   margin: 0;
+  padding: 0;
+  box-sizing: border-box;
   font-family: 'Segoe UI', sans-serif;
+}
+
+body {
   background-color: #000;
-  color: #d0ffd0; /* Світло-зелений текст */
-}
-
-a {
-  color: #aaffaa;
-  text-decoration: none;
-  transition: color 0.3s ease;
-}
-
-a:hover {
-  color: #00ff88;
+  color: #a8ff60;
+  line-height: 1.6;
 }
 
 header {
   background-color: #111;
-  padding: 1em;
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: space-between;
+  padding: 1rem;
+  text-align: center;
+  border-bottom: 2px solid #0f0;
 }
 
-.logo img {
-  height: 50px;
+h1 {
+  font-size: 1.8rem;
 }
 
 nav ul {
   list-style: none;
   display: flex;
+  justify-content: center;
   flex-wrap: wrap;
-  gap: 1.5em;
-  padding: 0;
-  margin: 0;
+  margin-top: 1rem;
 }
 
 nav li {
-  display: inline;
+  margin: 0 15px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #a8ff60;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+nav a:hover {
+  color: #0f0;
 }
 
 main {
-  padding: 2em;
-  max-width: 1000px;
-  margin: 0 auto;
-}
-
-h1, h2 {
-  color: #66ff99;
-  border-bottom: 2px solid #00ff88;
-  padding-bottom: 0.5em;
+  padding: 2rem;
 }
 
 footer {
   background-color: #111;
+  color: #666;
   text-align: center;
-  padding: 1em;
-  font-size: 0.9em;
-  margin-top: 2em;
+  padding: 1rem;
+  margin-top: 2rem;
+  font-size: 0.9rem;
 }
 
-/* Адаптивність */
-@media (max-width: 768px) {
+/* Mobile responsive */
+@media (max-width: 600px) {
   nav ul {
     flex-direction: column;
-    align-items: center;
   }
 
-  header {
-    flex-direction: column;
-    text-align: center;
-  }
-
-  .logo {
-    margin-bottom: 1em;
+  nav li {
+    margin: 10px 0;
   }
 }
